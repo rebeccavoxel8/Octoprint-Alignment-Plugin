@@ -26,8 +26,14 @@ plugin_author = "Jack Minardi"
 # The plugin's author's mail address.
 plugin_author_email = "jack@voxel8.co"
 
+# The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
+plugin_url = "https://github.com/Voxel8/Octoprint-Alignment-Plugin"
+
+# The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
+plugin_license = "AGPLv3"
+
 # Any additional requirements besides OctoPrint should be listed here
-plugin_requires = []
+plugin_requires = ['numpy', 'mecode']
 
 # Additional package data to install for this plugin. The subfolders "templates", "static" and "translations" will
 # already be installed automatically if they exist.
