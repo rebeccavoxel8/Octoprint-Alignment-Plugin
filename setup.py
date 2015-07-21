@@ -33,7 +33,7 @@ plugin_url = "https://github.com/Voxel8/Octoprint-Alignment-Plugin"
 plugin_license = "AGPLv3"
 
 # Any additional requirements besides OctoPrint should be listed here
-plugin_requires = ['numpy', 'mecode']
+plugin_requires = ['numpy', 'https://github.com/jminardi/mecode.git']
 
 # Additional package data to install for this plugin. The subfolders "templates", "static" and "translations" will
 # already be installed automatically if they exist.
