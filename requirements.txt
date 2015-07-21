@@ -7,4 +7,5 @@
 # variables INSTALL_REQUIRES and EXTRA_REQUIRES.
 ###
 
-.
+-e https://github.com/jminardi/mecode.git#egg=mecode
+-e .
