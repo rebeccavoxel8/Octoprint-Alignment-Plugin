@@ -518,8 +518,6 @@ class AutoAlignmentPlugin(octoprint.plugin.EventHandlerPlugin):
             alignment=dict(
                 type="github_commit",
                 displayName=__plugin_name__,
-                displayVersion=__plugin_version__,
-                current=__plugin_version__,
                 user="Voxel8",
                 repo="Octoprint-Alignment-Plugino",
                 branch='master',
