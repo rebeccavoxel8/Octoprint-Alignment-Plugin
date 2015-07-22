@@ -62,5 +62,5 @@ setup(**octoprint_setuptools.create_plugin_setup_parameters(
 	license=plugin_license,
 	requires=plugin_requires,
 	additional_data=plugin_additional_data,
-	dependency_links = ['http://github.com/jminardi/mecode/tarball/master#egg=mecode']
+	dependency_links = ['http://github.com/jminardi/mecode/tarball/master#egg=mecode-0.2.1']
 ))
