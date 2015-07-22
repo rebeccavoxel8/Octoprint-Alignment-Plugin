@@ -513,6 +513,20 @@ class AutoAlignmentPlugin(octoprint.plugin.EventHandlerPlugin):
         self.s = serial_obj
         return self
 
+    def get_update_information(self, *args, **kwargs):
+        return dict(
+            'alignment'=dict(
+                type="github_commit",
+                displayName=__plugin_name__,
+                displayVersion=__plugin_version__,
+                current=__plugin_version__,
+                user="Voxel8",
+                repo="Octoprint-Alignment-Plugino",
+                branch='master',
+                pip="https://github.com/Voxel8/Octoprint-Alignment-Plugin/archive/{target_version}.zip",
+            )
+        )
+
 
 def __plugin_load__():
     global __plugin_hooks__
@@ -524,4 +538,5 @@ def __plugin_load__():
     __plugin_hooks__ = {
         "octoprint.comm.transport.serial.factory": plugin.serial_factory,
         "octoprint.comm.protocol.gcode.queuing": plugin.print_started_sentinel,
+        "octoprint.plugin.softwareupdate.check_config": plugin.get_update_information,
     }
