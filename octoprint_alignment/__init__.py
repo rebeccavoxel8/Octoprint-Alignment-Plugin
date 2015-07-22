@@ -515,11 +515,10 @@ class AutoAlignmentPlugin(octoprint.plugin.EventHandlerPlugin):
 
     def get_update_information(self, *args, **kwargs):
         return dict(
-            alignment=dict(
+            alignment_plugin=dict(
                 type="github_commit",
-                displayName=__plugin_name__,
                 user="Voxel8",
-                repo="Octoprint-Alignment-Plugino",
+                repo="Octoprint-Alignment-Plugin",
                 branch='master',
                 pip="https://github.com/Voxel8/Octoprint-Alignment-Plugin/archive/{target_version}.zip",
             )
