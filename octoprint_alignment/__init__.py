@@ -515,7 +515,7 @@ class AutoAlignmentPlugin(octoprint.plugin.EventHandlerPlugin):
 
     def get_update_information(self, *args, **kwargs):
         return dict(
-            'alignment'=dict(
+            alignment=dict(
                 type="github_commit",
                 displayName=__plugin_name__,
                 displayVersion=__plugin_version__,
